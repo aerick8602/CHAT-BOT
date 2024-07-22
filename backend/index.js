@@ -28,4 +28,4 @@ server.listen(PORT, ()=>{
     connectDB();
     console.log(`Server listen at prot ${PORT}`);
 });
-
+app.get('/', (req, res) => res.status(200).send("Hello fork, Welcome to ChatBot 🤩🤩"));
