@@ -16,11 +16,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.urlencoded({extended:true}));
 app.use(express.json()); 
 app.use(cookieParser());
-const corsOption={
-    origin:'https://chat-bot-u71k.onrender.com',
-    credentials:true
-};
-app.use(cors(corsOption)); 
+
 
 
 // routes
